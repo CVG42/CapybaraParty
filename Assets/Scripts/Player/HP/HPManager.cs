@@ -2,19 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class HPManager : MonoBehaviour
 {
     public float StartingHP;
     public float currentHP { get; private set; }
     public event EventHandler playerDeath;
+    public Image healthBar;
 
     private void Awake()
     {
         currentHP = StartingHP;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void Update()
+    {
+        healthBar.fillAmount = Mathf.Clamp(StartingHP / currentHP, 0, 1);
+    }
+
+private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Enemy"))
         {
@@ -35,4 +42,5 @@ public class HPManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
 }
