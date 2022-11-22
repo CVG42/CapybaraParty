@@ -6,6 +6,7 @@ public class BulletScript : MonoBehaviour
 {
     private GameObject player;
     private Rigidbody2D rb;
+    public static int _damage = 2;
     public float force;
     private float timer;
 

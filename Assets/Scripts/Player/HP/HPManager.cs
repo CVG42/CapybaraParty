@@ -19,6 +19,11 @@ public class HPManager : MonoBehaviour
     void Update()
     {
         healthBar.fillAmount = Mathf.Clamp(StartingHP / currentHP, 0, 1);
+        if (StartingHP <= 0)
+        {
+            playerDeath?.Invoke(this, EventArgs.Empty);
+            Destroy(gameObject);
+        }
     }
 
 private void OnCollisionEnter2D(Collision2D collision)
@@ -27,11 +32,15 @@ private void OnCollisionEnter2D(Collision2D collision)
         {
             currentHP -= MeleeEnemy._damage;
         }
-        if(currentHP <= 0)
+        if(collision.gameObject.CompareTag("Bullet"))
+        {
+            currentHP -= BulletScript._damage;
+        }
+        /*if(currentHP <= 0)
         {
             playerDeath?.Invoke(this, EventArgs.Empty);
             Destroy(gameObject);
-        }
+        }*/
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
