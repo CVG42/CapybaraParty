@@ -15,18 +15,24 @@ public class PlayerController : MonoBehaviour
     public static bool _isFracingRight = true;
     private int jumpsLeft;
 
+    public static bool _isShielded;
+    public GameObject shield;
+
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
         jumpsLeft = maxJumps;
+        shield = transform.Find("Shield").gameObject;
+        DeactivateShield();
     }
 
     void Update()
     {
         Movement();
         Jump();
+        Shield();
     }
 
     bool OnGround()
@@ -79,5 +85,26 @@ public class PlayerController : MonoBehaviour
             _isFracingRight = !_isFracingRight;
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180);
         }
+    }
+    
+    void Shield()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftControl) && _isShielded == false)
+        {
+            ActiateShield();
+        }
+    }
+
+    void ActiateShield()
+    {
+        shield.SetActive(true);
+        _isShielded = true;
+        Invoke("DeactivateShield", 3f);
+    }
+
+    void DeactivateShield()
+    {
+        shield.SetActive(false);
+        _isShielded = false;
     }
 }

@@ -34,9 +34,13 @@ public class BulletScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Player") && PlayerController._isShielded == false)
         {
             other.gameObject.GetComponent<HPManager>().StartingHP -=2;
+            Destroy(gameObject);
+        }
+        if(other.gameObject.CompareTag("Player") && PlayerController._isShielded == true)
+        {
             Destroy(gameObject);
         }
     }

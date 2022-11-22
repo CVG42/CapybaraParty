@@ -18,6 +18,7 @@ public class GameOver : MonoBehaviour
     private void ActivateMenu(object sender, EventArgs e)
     {
         menuGameOver.SetActive(true);
+        Time.timeScale = 0f;
     }
     public void Restart()
     {
