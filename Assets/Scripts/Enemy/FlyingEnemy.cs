@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class FlyingEnemy : MonoBehaviour
 {
-    private GameObject player;
-    private bool right = true;
-    void Start()
+    public int HP;
+    public void TakeDmg(int dmg)
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
-    void Update()
-    {
-        float distance = Vector2.Distance(transform.position, player.transform.position);
- 
+        HP -= dmg;
+        if (HP <= 0)
+        {
+            Death();
+        }
     }
 
-    void Flip()
+    private void Death()
     {
-        right = !right;
-        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180);
+        Destroy(gameObject);
+        GameObject.FindGameObjectWithTag("PortalTrigger").GetComponent<PortalTrigger>().EliminatedEnemy();
     }
 }
