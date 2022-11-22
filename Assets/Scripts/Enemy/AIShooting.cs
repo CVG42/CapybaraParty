@@ -9,6 +9,7 @@ public class AIShooting : MonoBehaviour
 
     private float timer;
     private GameObject player;
+    public float maxDistance;
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class AIShooting : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.transform.position);
         Debug.Log(distance);
 
-        if (distance < 10)
+        if (distance < maxDistance)
         {
             timer += Time.deltaTime;
 

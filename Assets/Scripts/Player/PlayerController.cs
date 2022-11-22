@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidBody;
     private BoxCollider2D boxCollider;
     private Animator animator;
-    public bool isFracingRight = true;
+    public static bool _isFracingRight = true;
     private int jumpsLeft;
 
     private void Start()
@@ -74,9 +74,9 @@ public class PlayerController : MonoBehaviour
 
     void Flip(float xMovement)
     {
-        if ((isFracingRight == true && xMovement < 0) || (isFracingRight == false && xMovement > 0))
+        if ((_isFracingRight == true && xMovement < 0) || (_isFracingRight == false && xMovement > 0))
         {
-            isFracingRight = !isFracingRight;
+            _isFracingRight = !_isFracingRight;
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180);
         }
     }
