@@ -24,7 +24,7 @@ public class AIShooting : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            if (timer > 2)
+            if (timer > .5)
             {
                 timer = 0;
                 shoot();
