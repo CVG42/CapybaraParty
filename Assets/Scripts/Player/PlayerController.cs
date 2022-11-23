@@ -14,6 +14,15 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     public static bool _isFracingRight = true;
     private int jumpsLeft;
+    public static PlayerController instance;
+    
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
 
     private void Start()
     {
