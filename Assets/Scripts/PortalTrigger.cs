@@ -8,6 +8,7 @@ public class PortalTrigger : MonoBehaviour
     [SerializeField] private int eliminatedEnemies;
     public GameObject inactivePortal;
     public GameObject activatePortal;
+    public GameObject abduction;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class PortalTrigger : MonoBehaviour
         {
             Destroy(inactivePortal);
             activatePortal.SetActive(true);
+            abduction.SetActive(true);
         }
     }
 }

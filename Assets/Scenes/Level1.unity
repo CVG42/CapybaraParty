@@ -2032,6 +2032,7 @@ MonoBehaviour:
   eliminatedEnemies: 0
   inactivePortal: {fileID: 1590881023}
   activatePortal: {fileID: 946871169}
+  abduction: {fileID: 0}
 --- !u!4 &433075957
 Transform:
   m_ObjectHideFlags: 0
