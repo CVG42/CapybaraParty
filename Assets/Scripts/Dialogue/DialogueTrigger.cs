@@ -9,6 +9,7 @@ public class DialogueTrigger : MonoBehaviour
     public GameObject[] dialogue;
     public bool isInteracting;
     public static bool _isTalking;
+    [SerializeField] private AudioSource quack;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class DialogueTrigger : MonoBehaviour
             dialogueTrigger.SetActive(false);
             dialogue[0].SetActive(true);
             dialogue[1].SetActive(true);
+            quack.Play();
             _isTalking = true;
         }
     }

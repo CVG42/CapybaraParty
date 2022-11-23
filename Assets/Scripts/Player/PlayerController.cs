@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 
     public static bool _isShielded;
     public GameObject shield;
-
+    [SerializeField] private AudioSource jumpSfx;
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && jumpsLeft > 0)
         {
             jumpsLeft--;
+            jumpSfx.Play();
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, 0f);
             rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }

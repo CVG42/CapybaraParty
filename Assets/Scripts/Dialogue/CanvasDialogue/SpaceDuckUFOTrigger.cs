@@ -6,6 +6,7 @@ public class SpaceDuckUFOTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject readyDialogue;
     private bool isInteracting;
+    [SerializeField] private AudioSource quack;
 
     private void Update()
     {
@@ -20,6 +21,7 @@ public class SpaceDuckUFOTrigger : MonoBehaviour
         {
             readyDialogue.SetActive(true);
             isInteracting = true;
+            quack.Play();
         }
     }
 }

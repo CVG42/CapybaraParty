@@ -10,6 +10,7 @@ public class AIShooting : MonoBehaviour
     private float timer;
     private GameObject player;
     public float maxDistance;
+    [SerializeField] private AudioSource shootingSfx;
 
     void Start()
     {
@@ -35,5 +36,6 @@ public class AIShooting : MonoBehaviour
     void shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
+        shootingSfx.Play();
     }
 }

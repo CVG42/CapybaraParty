@@ -7,6 +7,7 @@ public class Reload : MonoBehaviour
 {
     public bool isOnWater;
     public LayerMask water;
+    [SerializeField] private AudioSource poop;
 
     private void Start()
     {
@@ -17,6 +18,7 @@ public class Reload : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.R) && isOnWater == true)
         {
+            poop.Play();
             ReloadWeapon();
         }
     }

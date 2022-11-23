@@ -6,7 +6,7 @@ public class Torreta : MonoBehaviour
 {
     [SerializeField] private Transform shootingPoint;
     [SerializeField] private GameObject caca;
-
+    [SerializeField] private AudioSource shoot;
     void Start()
     {
 
@@ -16,6 +16,7 @@ public class Torreta : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && AmmoManager._ammo > 0)
         {
+            shoot.Play();
             Shoot();
         }
     }
