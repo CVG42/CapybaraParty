@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Jetpack : MonoBehaviour
 {
-    public float jetpackForce = 75.0f;
+    public float jetpackForce = 30.0f;
     private Rigidbody2D playerRigidbody;
 
     void Start()
@@ -15,7 +15,7 @@ public class Jetpack : MonoBehaviour
 
     void FixedUpdate()
     {
-        bool jetpackActive = Input.GetButton("Fire2");
+        bool jetpackActive = Input.GetKey("c");
         if (jetpackActive)
         {
             playerRigidbody.AddForce(new Vector2(0, jetpackForce));

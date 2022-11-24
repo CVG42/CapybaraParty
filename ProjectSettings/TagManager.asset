@@ -20,14 +20,14 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - Decoration
   - Water
   - UI
+  - Ground
   - Kaizo
   - BossNave
   - Player
   - ToxicWater
-  - 
   - 
   - 
   - 
