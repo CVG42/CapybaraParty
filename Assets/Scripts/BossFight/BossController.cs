@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System;
 using System.Collections;
+using Unity.Mathematics;
 using Random = UnityEngine.Random;
 
 
@@ -23,6 +24,11 @@ namespace BossFight
         public Shipboss status;
         private Animator _animator;
         public float statusCH;
+        [Header("LacerMelee Shoot Atack")] 
+        public Transform lacerpos;
+        public GameObject lacerGo;
+        public float lacerTime = 1.8f;
+        
 
         private void Start()
         {
@@ -71,6 +77,7 @@ namespace BossFight
                     break;
                 case Shipboss.Lacermelee:
                     _animator.SetTrigger("Lacermelee");
+                    
                     StartCoroutine(ShipStatuses());
                     break;
                 case Shipboss.Aoe:
@@ -80,6 +87,21 @@ namespace BossFight
                 default:
                     break;
             }
+            
+            
+            
+            
         }
+
+        /*IEnumerator LacerShoot()
+        {
+            yield return new WaitForSeconds(lacerTime);
+            GameObject lacershootgo = Instantiate(lacerGo, lacerpos.position, quaternion.identity);
+            //lacershootgo.transform.SetParent(lacerpos);
+            //lacershootgo.transform.localPosition = new Vector2(0, 0);
+            //lacershootgo.transform.SetParent(null);
+            //yield return new WaitForSeconds(0.7f); //Tiempo en el que el lacer cae al piso
+        }*/
+        
     }
 }
