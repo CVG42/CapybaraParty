@@ -31,7 +31,6 @@ public class DialogueTrigger : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.L) && _isTalking == true)
         {
             canvasDialogue.SetActive(false);
-            Debug.Log("Destroy");
         }
     }
 
