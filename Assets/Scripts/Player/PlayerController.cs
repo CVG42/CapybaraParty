@@ -90,9 +90,10 @@ public class PlayerController : MonoBehaviour
     
     void Shield()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl) && _isShielded == false)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && ShieldItem._shield >= 1 && _isShielded == false)
         {
             ActiateShield();
+            ShieldItem._shield--;
         }
     }
 
@@ -100,7 +101,7 @@ public class PlayerController : MonoBehaviour
     {
         shield.SetActive(true);
         _isShielded = true;
-        Invoke("DeactivateShield", 3f);
+        Invoke("DeactivateShield", 4f);
     }
 
     void DeactivateShield()
