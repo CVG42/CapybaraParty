@@ -747,7 +747,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1731438570790672055, guid: 0d8cbea95b2c430429170367f4a71860, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d8cbea95b2c430429170367f4a71860, type: 3}
 --- !u!1 &227233034 stripped
 GameObject:
@@ -1821,7 +1822,7 @@ SpriteRenderer:
   m_SortingLayerID: 686397639
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9878355551085ce48b858f12f473bfc4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1840,8 +1841,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358602785}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.97, y: -3.11, z: 0}
-  m_LocalScale: {x: 4.1028, y: 1, z: 1}
+  m_LocalPosition: {x: -22.1292, y: -2.911, z: 0}
+  m_LocalScale: {x: 2.0524554, y: 1.4189, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1860,18 +1861,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.28618455}
+  m_Offset: {x: -0.0064628124, y: -0.03634522}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.51, y: 0.95}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.4276309}
+  m_Size: {x: 2.0986958, y: 0.41828233}
   m_EdgeRadius: 0
 --- !u!114 &358602789
 MonoBehaviour:
@@ -2265,7 +2266,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1731438570790672055, guid: 0d8cbea95b2c430429170367f4a71860, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d8cbea95b2c430429170367f4a71860, type: 3}
 --- !u!1 &519420028
 GameObject:
@@ -4481,7 +4483,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 629731592}
-  - component: {fileID: 629731593}
   m_Layer: 5
   m_Name: FatChickenDialogue
   m_TagString: Untagged
@@ -4514,23 +4515,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &629731593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 629731591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3734fca86a9eb914d91ce9948dc6b156, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sentences:
-  - Los aliens nos han invadido y eres nuestra unica esperanza
-  - Salvanos por favor!!!
-  texts: {fileID: 2007635572}
-  typingSpeed: 0.05
 --- !u!1 &638915595
 GameObject:
   m_ObjectHideFlags: 0
@@ -5032,7 +5016,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1731438570790672055, guid: 0d8cbea95b2c430429170367f4a71860, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d8cbea95b2c430429170367f4a71860, type: 3}
 --- !u!1 &832714018
 GameObject:
@@ -28027,7 +28012,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1731438570790672055, guid: 0d8cbea95b2c430429170367f4a71860, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d8cbea95b2c430429170367f4a71860, type: 3}
 --- !u!1 &1859732164
 GameObject:
@@ -29213,7 +29199,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1731438570790672055, guid: 0d8cbea95b2c430429170367f4a71860, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d8cbea95b2c430429170367f4a71860, type: 3}
 --- !u!1 &2007635570
 GameObject:

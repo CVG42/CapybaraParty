@@ -10,5 +10,9 @@ public class Orange : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if (collision.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

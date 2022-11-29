@@ -15,7 +15,7 @@ public class Jetpack : MonoBehaviour
 
     void FixedUpdate()
     {
-        bool jetpackActive = Input.GetKey("c");
+        bool jetpackActive = Input.GetButton("Fire2");
         if (jetpackActive)
         {
             playerRigidbody.AddForce(new Vector2(0, jetpackForce));

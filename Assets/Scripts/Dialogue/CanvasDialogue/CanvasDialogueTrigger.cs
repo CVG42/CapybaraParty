@@ -10,10 +10,10 @@ public class CanvasDialogueTrigger : MonoBehaviour
         if(DialogueTrigger._isTalking == true)
         {
             NPCDialogue.SetActive(true);
-        }
-        else
-        {
-            NPCDialogue.SetActive(false);
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                Destroy(NPCDialogue);
+            }
         }
     }
 }
