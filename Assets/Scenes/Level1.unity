@@ -24419,7 +24419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975272675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -51.9187, y: -1.0512, z: 0}
+  m_LocalPosition: {x: 16.45, y: 0.6, z: 0}
   m_LocalScale: {x: 0.18411578, y: 0.175439, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29320,7 +29320,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: si presionas 'f' vas a poder disparar
+  m_text: si presionas 'f' vas a poder disparar y para protegerte podras activar
+    un escudo por 4 segundos al oprimir 'ctrl' solo si cuentas con uno o mas escudos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 74b6b6d384eca5e44bbfb484b1fd9c4a, type: 2}
   m_sharedMaterial: {fileID: 7032123100636673246, guid: 74b6b6d384eca5e44bbfb484b1fd9c4a, type: 2}
@@ -29383,7 +29384,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -788.8513, w: -35.981567}
+  m_margin: {x: 0, y: 0, z: -1114.6245, w: -35.981567}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -29414,7 +29415,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -547.7, y: -408.19}
+  m_AnchoredPosition: {x: -547.7, y: -381}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2001523483
