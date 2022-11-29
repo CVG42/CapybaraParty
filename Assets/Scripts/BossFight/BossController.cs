@@ -24,10 +24,13 @@ namespace BossFight
         public Shipboss status;
         private Animator _animator;
         public float statusCH;
-        [Header("LacerMelee Shoot Atack")] 
-        public Transform lacerpos;
-        public GameObject lacerGo;
-        public float lacerTime = 1.8f;
+        [Header("LacerAoe Shoot Atack")] 
+        public GameObject lacerFA;
+        public float startLFA = 1.10f;
+        public float lfaTime = 2f;
+        public float[] targets;
+        
+        
         
 
         private void Start()
@@ -82,6 +85,7 @@ namespace BossFight
                     break;
                 case Shipboss.Aoe:
                     _animator.SetTrigger("AOE");
+                    StartCoroutine(LacerAOE());
                     StartCoroutine(ShipStatuses());
                     break;
                 default:
@@ -93,15 +97,33 @@ namespace BossFight
             
         }
 
-        /*IEnumerator LacerShoot()
+        IEnumerator LacerAOE()
         {
-            yield return new WaitForSeconds(lacerTime);
-            GameObject lacershootgo = Instantiate(lacerGo, lacerpos.position, quaternion.identity);
-            //lacershootgo.transform.SetParent(lacerpos);
-            //lacershootgo.transform.localPosition = new Vector2(0, 0);
-            //lacershootgo.transform.SetParent(null);
-            //yield return new WaitForSeconds(0.7f); //Tiempo en el que el lacer cae al piso
-        }*/
+            statusCH = 12;
+            yield return new WaitForSeconds(startLFA);
+            StartCoroutine(lacerShootings());
+        }
+
+        IEnumerator lacerShootings()
+        {
+            int counter = 0;
+
+            while (counter < 12)
+            {
+            var position = Random.Range(0, 11);
+            yield return new WaitForSeconds(lfaTime);
+            Instantiate(lacerFA, new Vector2(targets[position], 12f), Quaternion.identity);
+            counter++;
+            if (counter > 20)
+            {
+                break;
+            }
+            
+            }
+
+            statusCH = 5;
+
+        }
         
     }
 }
