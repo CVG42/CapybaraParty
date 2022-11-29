@@ -1685,7 +1685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: cuidado, ve sobre tu amigo cocodrilo para pasar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 74b6b6d384eca5e44bbfb484b1fd9c4a, type: 2}
   m_sharedMaterial: {fileID: 7032123100636673246, guid: 74b6b6d384eca5e44bbfb484b1fd9c4a, type: 2}
@@ -2161,7 +2161,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 433358297}
-  - component: {fileID: 433358298}
   m_Layer: 5
   m_Name: DuckDialogue (1)
   m_TagString: Untagged
@@ -2194,23 +2193,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &433358298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433358296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90d7dc953eb388141838ceafc303c68e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sentences:
-  - Si oprimes 'R' en el agua te vas a llevar una grata sorpresa por cada 5 naranjas
-    que comas
-  texts: {fileID: 1030938609}
-  typingSpeed: 0.05
 --- !u!1001 &497428326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5232,7 +5214,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839600243}
-  - component: {fileID: 839600242}
   m_Layer: 5
   m_Name: DuckDialogue (2)
   m_TagString: Untagged
@@ -5240,22 +5221,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &839600242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839600241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90d7dc953eb388141838ceafc303c68e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sentences:
-  - Con 'F' podras disparar y con 'Ctrl' vas a obtener un shield que dura 3 segundos
-  texts: {fileID: 1992072987}
-  typingSpeed: 0.05
 --- !u!224 &839600243
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24234,7 +24199,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -547, y: -378}
+  m_AnchoredPosition: {x: -541, y: -409.6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1030938609
@@ -24257,7 +24222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: si oprimes 'r' en el agua te daran 7 balas por cada 5 naranjas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 74b6b6d384eca5e44bbfb484b1fd9c4a, type: 2}
   m_sharedMaterial: {fileID: 7032123100636673246, guid: 74b6b6d384eca5e44bbfb484b1fd9c4a, type: 2}
@@ -24320,7 +24285,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -788.8513, w: -35.981567}
+  m_margin: {x: 0, y: 0, z: -830.5852, w: -35.981567}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -25044,7 +25009,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1216945826}
-  - component: {fileID: 1216945827}
   m_Layer: 5
   m_Name: DuckDialogue
   m_TagString: Untagged
@@ -25077,22 +25041,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1216945827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216945825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90d7dc953eb388141838ceafc303c68e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sentences:
-  - Ve sobre tu amigo el cocodrilo
-  texts: {fileID: 346142755}
-  typingSpeed: 0.05
 --- !u!1 &1242180999
 GameObject:
   m_ObjectHideFlags: 0
@@ -25958,7 +25906,6 @@ GameObject:
   - component: {fileID: 1517018048}
   - component: {fileID: 1517018047}
   - component: {fileID: 1517018046}
-  - component: {fileID: 1517018050}
   - component: {fileID: 1517018045}
   - component: {fileID: 1517018051}
   m_Layer: 0
@@ -26004,6 +25951,7 @@ MonoBehaviour:
   dialogue:
   - {fileID: 332310166}
   - {fileID: 325243078}
+  canvasDialogue: {fileID: 433358296}
   isInteracting: 0
   quack: {fileID: 1517018051}
 --- !u!61 &1517018047
@@ -26102,19 +26050,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1517018050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517018044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828af0d08625dea47803dda8b22fe5d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NPCDialogue: {fileID: 433358296}
 --- !u!82 &1517018051
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26921,7 +26856,6 @@ GameObject:
   - component: {fileID: 1716117131}
   - component: {fileID: 1716117130}
   - component: {fileID: 1716117133}
-  - component: {fileID: 1716117134}
   - component: {fileID: 1716117128}
   - component: {fileID: 1716117135}
   m_Layer: 0
@@ -27063,21 +26997,9 @@ MonoBehaviour:
   dialogue:
   - {fileID: 867021842}
   - {fileID: 2016634550}
+  canvasDialogue: {fileID: 1216945825}
   isInteracting: 0
   quack: {fileID: 1716117135}
---- !u!114 &1716117134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716117127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828af0d08625dea47803dda8b22fe5d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NPCDialogue: {fileID: 1216945825}
 --- !u!82 &1716117135
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27479,7 +27401,6 @@ GameObject:
   - component: {fileID: 1798735821}
   - component: {fileID: 1798735825}
   - component: {fileID: 1798735826}
-  - component: {fileID: 1798735827}
   - component: {fileID: 1798735824}
   - component: {fileID: 1798735828}
   m_Layer: 0
@@ -27622,6 +27543,7 @@ MonoBehaviour:
   dialogue:
   - {fileID: 1109559342}
   - {fileID: 1187737376}
+  canvasDialogue: {fileID: 629731591}
   isInteracting: 0
   quack: {fileID: 1798735828}
 --- !u!114 &1798735826
@@ -27637,19 +27559,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emote: {fileID: 2028427467}
---- !u!114 &1798735827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798735820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a8cfde4401e26c43b9692997e32d179, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NPCDialogue: {fileID: 629731591}
 --- !u!82 &1798735828
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28175,7 +28084,6 @@ GameObject:
   - component: {fileID: 1869193633}
   - component: {fileID: 1869193632}
   - component: {fileID: 1869193631}
-  - component: {fileID: 1869193630}
   - component: {fileID: 1869193629}
   - component: {fileID: 1869193635}
   m_Layer: 0
@@ -28205,19 +28113,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1869193630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869193628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828af0d08625dea47803dda8b22fe5d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NPCDialogue: {fileID: 839600241}
 --- !u!114 &1869193631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28234,6 +28129,7 @@ MonoBehaviour:
   dialogue:
   - {fileID: 145507204}
   - {fileID: 965563345}
+  canvasDialogue: {fileID: 839600241}
   isInteracting: 0
   quack: {fileID: 1869193635}
 --- !u!61 &1869193632
@@ -29047,7 +28943,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: si presionas 'f' vas a poder disparar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 74b6b6d384eca5e44bbfb484b1fd9c4a, type: 2}
   m_sharedMaterial: {fileID: 7032123100636673246, guid: 74b6b6d384eca5e44bbfb484b1fd9c4a, type: 2}
@@ -29141,7 +29037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -547, y: -376}
+  m_AnchoredPosition: {x: -547.7, y: -408.19}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2001523483
@@ -29260,7 +29156,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Text
+  m_text: Nos han invadido y eres nuestra una esperanza, salvanos!!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 74b6b6d384eca5e44bbfb484b1fd9c4a, type: 2}
   m_sharedMaterial: {fileID: 7032123100636673246, guid: 74b6b6d384eca5e44bbfb484b1fd9c4a, type: 2}

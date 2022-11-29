@@ -7,6 +7,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public GameObject dialogueTrigger;
     public GameObject[] dialogue;
+    public GameObject canvasDialogue;
     public bool isInteracting;
     public static bool _isTalking;
     [SerializeField] private AudioSource quack;
@@ -23,8 +24,14 @@ public class DialogueTrigger : MonoBehaviour
             dialogueTrigger.SetActive(false);
             dialogue[0].SetActive(true);
             dialogue[1].SetActive(true);
+            canvasDialogue.SetActive(true);
             quack.Play();
             _isTalking = true;
+        }
+        if(Input.GetKeyDown(KeyCode.L) && _isTalking == true)
+        {
+            canvasDialogue.SetActive(false);
+            Debug.Log("Destroy");
         }
     }
 
