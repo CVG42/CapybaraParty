@@ -8,6 +8,7 @@ public class Reload : MonoBehaviour
     public bool isOnWater;
     public LayerMask water;
     [SerializeField] private AudioSource poop;
+    public GameObject bubble;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class Reload : MonoBehaviour
         {
             poop.Play();
             ReloadWeapon();
+            bubble.SetActive(true);
         }
     }
 
@@ -44,5 +46,6 @@ public class Reload : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         isOnWater = false;
+        bubble.SetActive(false);
     }
 }
