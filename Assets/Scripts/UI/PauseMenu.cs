@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pauseButton;
     [SerializeField] private GameObject pauseMenu;
+    public string sceneName;
     public void Pause()
     {
         Time.timeScale = 0f;
@@ -26,12 +27,11 @@ public class PauseMenu : MonoBehaviour
     }
     public void Exit()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
-        Debug.Log("Exit");
         Application.Quit();
     }
     public void MainMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(sceneName);
+        Time.timeScale = 1f;
     }
 }

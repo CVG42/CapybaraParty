@@ -8,6 +8,7 @@ public class GameOver : MonoBehaviour
 {
     [SerializeField] private GameObject menuGameOver;
     private HPManager healthManager;
+    public string sceneName;
 
     private void Start()
     {
@@ -27,12 +28,11 @@ public class GameOver : MonoBehaviour
     }
     public void Exit()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
-        Debug.Log("Exit");
         Application.Quit();
     }
     public void MainMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(sceneName);
+        Time.timeScale = 0f;
     }
 }
