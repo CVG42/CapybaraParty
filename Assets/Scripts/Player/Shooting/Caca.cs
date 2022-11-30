@@ -19,6 +19,10 @@ public class Caca : MonoBehaviour
             collision.GetComponent<MeleeEnemy>().TakeDmg(dmg);
             Destroy(gameObject);
         }
+        else if(collision.CompareTag("Boss"))
+        {
+            Destroy(gameObject);
+        }
     }
 
 

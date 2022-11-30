@@ -17,6 +17,7 @@ TagManager:
   - Croc
   - Bullet
   - Shield
+  - Boss
   layers:
   - Default
   - TransparentFX
