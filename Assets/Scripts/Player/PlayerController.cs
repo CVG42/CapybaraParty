@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
         jumpsLeft = maxJumps;
         shield = transform.Find("Shield").gameObject;
         DeactivateShield();
+        _isFracingRight = true;
     }
 
     void Update()
