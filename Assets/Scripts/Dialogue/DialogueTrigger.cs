@@ -53,6 +53,7 @@ public class DialogueTrigger : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         dialogueTrigger.SetActive(false);
+        canvasDialogue.SetActive(false);
         isInteracting = false;
         exitDialogue();
     }
